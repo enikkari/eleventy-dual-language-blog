@@ -1,10 +1,11 @@
 ---
-title_jp: ヘルシンキのレストラン asd
-title_fi: Helsingin ravintolat as asdwww
-layout: post.njk
+title_jp: ヘル
+title_fi: Helsi
+layout: base.njk
 templateEngineOverride: njk,md
 ---
 
 asdasd
+asdf
 
 {% include "postlist.njk" %}

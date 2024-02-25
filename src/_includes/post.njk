@@ -9,5 +9,8 @@
         {% block content2 %}{% endblock %}
     </div>
 </div>
+{% block content %}
+    {{ content | safe }}
+    {% endblock %}
 post list:
     {% include "postlist.njk" %}
