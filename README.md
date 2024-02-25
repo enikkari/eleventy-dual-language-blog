@@ -1,4 +1,7 @@
 
+```
+npm start # start 
+```
 
 https://later.com/linki-in-bio
 

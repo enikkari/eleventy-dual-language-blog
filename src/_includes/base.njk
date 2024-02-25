@@ -4,17 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ニッコリ.fi {{ title }}</title>
-  <link rel="stylesheet" href="../css/foundation.min.css">
+  <title>ニッコリ.fi {{ title_jp }} {{ title_fi }} </title>
+  <link rel="stylesheet" href="../../css/foundation.min.css">
   <script async src="https://analytics.umami.is/script.js"
           data-website-id="d4ef6066-cf9b-4b85-86f7-1f87d53cb64f"></script>
 </head>
 <body>
-  <header>
-    <h1>{{ title }}</h1>
-  </header>
   <main>
+    {% block content %}
     {{ content | safe }}
+    {% endblock %}
   </main>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>

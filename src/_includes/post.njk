@@ -1,5 +1,18 @@
----
-layout: base.njk
----
+<header><h1>{{title_jp}}</h1></header>
+{% block content1 %}{% endblock %}
 
-<article>{{ content | safe}}</article>
+<header><h1>{{title_fi}}</h1></header>
+{% block content2 %}{% endblock %}
+
+post list asd asdasd
+{% include "postlist.njk" %}
+
+<section class="left">
+    {% block left %}{% endblock %}
+  </section>
+  
+  <section class="right">
+    {% block right %}
+    This is more content
+    {% endblock %}
+  </section>
