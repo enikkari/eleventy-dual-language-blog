@@ -1,6 +1,6 @@
 ---
-title_jp: ヘルシンキのレストラン asd
-title_fi: Helsingin ravintolat as asdwww
+title_jp: ヘルシンキのレストラン
+title_fi: Helsingin ravintolat
 templateEngineOverride: njk,md
 layout: base.njk
 ---
@@ -16,11 +16,3 @@ layout: base.njk
 {% endblock %}
 
 outside of block
-
-{% block left %}
-This is the left side!
-{% endblock %}
-
-{% block right %}
-This is the right side!
-{% endblock %}

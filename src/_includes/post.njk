@@ -1,18 +1,13 @@
-<header><h1>{{title_jp}}</h1></header>
+<!-- todo, reapat this pattern, make collapsible, images in middle -->
+<div class="row medium-uncollapse large-collapse">
+    <div class="small-6 columns">
+        <header><h1>{{title_jp}}</h1></header>
 {% block content1 %}{% endblock %}
-
-<header><h1>{{title_fi}}</h1></header>
-{% block content2 %}{% endblock %}
-
-post list asd asdasd
-{% include "postlist.njk" %}
-
-<section class="left">
-    {% block left %}{% endblock %}
-  </section>
-  
-  <section class="right">
-    {% block right %}
-    This is more content
-    {% endblock %}
-  </section>
+    </div>
+    <div class="small-6 columns">
+        <header><h1>{{title_fi}}</h1></header>
+        {% block content2 %}{% endblock %}
+    </div>
+</div>
+post list:
+    {% include "postlist.njk" %}
