@@ -3,6 +3,7 @@ title_jp: ヘルシンキのレストラン
 title_fi: Helsingin ravintolat
 templateEngineOverride: njk,md
 layout: base.njk
+date: "2024-02-26"
 ---
 
 {% extends 'post.njk' %}
