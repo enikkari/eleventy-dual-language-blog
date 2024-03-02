@@ -8,12 +8,29 @@ date: "2024-02-26"
 
 {% extends 'post.njk' %}
 
-{% block content1 %}
-   <ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きたいで
-{% endblock %}
+{% block content %}
+{{   
+langBlock(
+    " <ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きたいで", 
+    "suomi Halusan emeenää dfsdflölk asdlök", 
+    ""
+)}}
 
-{% block content2 %}
-    <p>Haluan mennä töihin</p>
-{% endblock %}
+{{ langBlock(
+    " <ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きたいで"
+    )
+}}
 
-outside of block
+{{ centerImage(
+"<img class=\"thumbnail\" src=\"../img/nikkori.jpeg\" max-height=\"10\">"
+)}}
+
+
+{{ langBlock(
+    " <ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きたいで", 
+    "kuva"
+    )
+}}
+
+
+{% endblock %}

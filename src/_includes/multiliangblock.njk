@@ -1,0 +1,16 @@
+{% macro langBlock(content1, content2, image = '') %}
+<div class="medium-6 small-12 columns" lang="jp">
+    {{ content1 | safe}}
+</div>
+<div class="medium-6 small-12 columns" lang="fi">
+    {{ content2 | safe }}
+</div>
+    {{ image | safe }}
+</div>
+{% endmacro %}
+
+{% macro centerImage(content1) %}
+<div class="small-12 columns text-center">
+    {{ content1 | safe}}
+</div>
+{% endmacro %}
