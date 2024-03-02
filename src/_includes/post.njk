@@ -1,4 +1,4 @@
-{% from "multiliangblock.njk" import langBlock, centerImage %}
+{% from "multiliangblock.njk" import langBlock, centerImage, postlist %}
 <div class="row">
     <dic class="column callout primary">
         <div class="show-for-medium medium-4 columns text-center">
@@ -24,7 +24,10 @@
     </div>
 </div>
 
-<p style="color: #FF9F35">{{date}}</p>
+<div class="row text-right">
+<p style="color: #655d56">{{date}}</p>
+</div>
+
 <!-- todo, reapat this pattern, make collapsible, images in middle -->
 <div class="row">
     <div class="medium-6 small-12 columns" lang="jp">
@@ -39,9 +42,29 @@
     {{ content }}
     {% endblock %}
 </div>
+
+<!-- post list -->
 <div class="row">
-    <div class="small-12 columns">
-        post list :
-        {% include "postlist.njk" %}
+    <div class="show-for-medium medium-6 small-12 columns" lang="jp">
+        <ul>
+            {% for post in collections.posts %}
+            <li><a href="{{ post.url }}">{{ post.data.title_jp }}</a></li>
+            {% endfor %}
+            </ul>            
+    </div>
+    <div class="show-for-medium medium-6 small-12 columns" lang="fi">
+        <ul>
+            {% for post in collections.posts %}
+            <li><a href="{{ post.url }}">{{ post.data.title_fi }}</a></li>
+            {% endfor %}
+            </ul>            
+    </div>
+    <div class="hide-for-medium small-12 columns" lang="jp">
+        <ul>
+            {% for post in collections.posts %}
+            <li><a href="{{ post.url }}">{{ post.data.title_jp }}</a></li>
+            <li><a href="{{ post.url }}">{{ post.data.title_fi }}</a></li>
+            {% endfor %}
+            </ul>            
     </div>
 </div>

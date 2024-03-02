@@ -1,16 +1,28 @@
-{% macro langBlock(content1, content2, image = '') %}
-<div class="medium-6 small-12 columns" lang="jp">
-    {{ content1 | safe}}
-</div>
-<div class="medium-6 small-12 columns" lang="fi">
-    {{ content2 | safe }}
-</div>
-    {{ image | safe }}
+{% macro langBlock(content1, content2) %}
+<div class="row">
+    <div class="medium-6 small-12 columns" lang="jp">
+        {{ content1 | safe}}
+    </div>
+    <div class="medium-6 small-12 columns" lang="fi">
+        {{ content2 | safe }}
+    </div>
 </div>
 {% endmacro %}
 
 {% macro centerImage(content1) %}
-<div class="small-12 columns text-center">
+<div class="small-12 columns">
     {{ content1 | safe}}
 </div>
+{% endmacro %}
+
+{% macro postlist(lang) %}
+{% if lang=="fi" %}
+  LANG SUOMI
+{% endif %}
+<ul>
+{% for post in collections.posts %}
+    <li><a href="{{ post.url }}">{{ post.data.title_jp }} <BR> {{ post.data.title_fi }}</a></li>
+{% endfor %}
+</ul>
+
 {% endmacro %}
