@@ -1,10 +1,10 @@
 {% macro langBlock(content1, content2) %}
 <div class="row">
     <div class="medium-6 small-12 columns" lang="jp">
-        {{ content1 | safe}}
+        <p>{{ content1 | safe}}</p>
     </div>
     <div class="medium-6 small-12 columns" lang="fi">
-        {{ content2 | safe }}
+        <p>{{ content2 | safe }}</p>
     </div>
 </div>
 {% endmacro %}
