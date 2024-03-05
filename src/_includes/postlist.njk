@@ -1,5 +1,27 @@
-<ul>
-{% for post in collections.posts %}
-<li><a href="{{ post.url }}">{{ post.data.title_jp }} <BR> {{ post.data.title_fi }}</a></li>
-{% endfor %}
-</ul>
+<!-- post list -->
+<div class="row">
+    <div class="show-for-medium medium-6 small-12 columns" lang="jp">
+        <ul>
+            ポスト:
+            {% for post in collections.posts %}
+            <li><a href="{{ post.url }}">{{ post.data.title_jp }}</a></li>
+            {% endfor %}
+            </ul>            
+    </div>
+    <div class="show-for-medium medium-6 small-12 columns" lang="fi">
+        <ul>
+            Postaukset:
+            {% for post in collections.posts %}
+            <li><a href="{{ post.url }}">{{ post.data.title_fi }}</a></li>
+            {% endfor %}
+            </ul>            
+    </div>
+    <div class="hide-for-medium small-12 columns" lang="jp">
+        <ul>
+            ポスト / Postaukset:
+            {% for post in collections.posts %}
+            <li><a href="{{ post.url }}">{{ post.data.title_jp }}</a></li>
+            <li><a href="{{ post.url }}">{{ post.data.title_fi }}</a></li>
+            {% endfor %}
+            </ul>            
+    </div>
