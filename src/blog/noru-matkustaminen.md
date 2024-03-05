@@ -9,10 +9,42 @@ date: "2024-03-02"
 
 {% block content %}
 
+{{langBlock(
+"フィンランドにようこそ！
+ヘルシンキまで電車で一番便利な乗れれます
+", 
+"Tervetuloa Suomeen!")}}
+
+<h2>{{langBlock("ヘルシンキ空港から市内まで何で乗ります", "Miten matkustan Helsinki-Vantaan Lentokentältä kaupunkiin?")}}</h2>
+
+<h3>{{langBlock("ヘルシンキに乗りたい", "Haluan Helsinkiin")}}</h2>
+{{langBlock(
+"フィンランドにようこそ！
+ヘルシンキまで電車で一番便利な乗れれます
+", 
+"")}}
+KUVA keh'rata
+
+HSL ABC
+liput: lippuautomaatti, HSL appi, R-kioski
+
+<h3>{{langBlock("ヘルシンキに乗りたい", "Haluan Helsinkiin")}}</h2>
+
+
+
 Lentokenttä Helsinki Vantaa
 Helsinki: ABC ? -lippu
 Turku: bussi
 
-langBlock()
+Onnibussi 
+r kioski 
+
+<h2>{{langBlock("電車で", "Junalla VR")}}</h5>
+
+{{langBlock("とど", "todo")}}
+
+<h2>{{langBlock("どこにチケットを買えられますか", "Mistä voi ostaa lippuja?")}}</h5>
+
+{{langBlock("とど", "todo")}}
 
 {% endblock %}
