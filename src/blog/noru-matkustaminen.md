@@ -30,8 +30,6 @@ liput: lippuautomaatti, HSL appi, R-kioski
 
 <h3>{{langBlock("ヘルシンキに乗りたい", "Haluan Helsinkiin")}}</h2>
 
-
-
 Lentokenttä Helsinki Vantaa
 Helsinki: ABC ? -lippu
 Turku: bussi
@@ -39,12 +37,38 @@ Turku: bussi
 Onnibussi 
 r kioski 
 
+<h2>{{langBlock("電車で", "Helsingin sisällä")}}</h5>
+
+HSL app,
+Lippuautomaatti
+Kortti
+R-kioski
+
+
 <h2>{{langBlock("電車で", "Junalla VR")}}</h5>
 
 {{langBlock("とど", "todo")}}
+lippuautomatti
+
+<h2>{{langBlock("で", "Onnibussi")}}</h5>
+R-kioski
 
 <h2>{{langBlock("どこにチケットを買えられますか", "Mistä voi ostaa lippuja?")}}</h5>
 
 {{langBlock("とど", "todo")}}
+
+Turku / Muumimaailma.
+Onnibussi
+turku bussi
+Turku basu ni kaado de kaemasu
+
+
+Porvoo
+bussilla
+todo: paikalliset liput
+
+Tampere
+junalla tai bussilla
+todo: paikalliset liput
 
 {% endblock %}
