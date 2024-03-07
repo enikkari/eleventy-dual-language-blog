@@ -9,9 +9,11 @@ date: "2024-03-02"
 
 {% block content %}
 
+{{instagram("C3j5hfHMtrF")}}
+
 {{langBlock(
 "フィンランドにようこそ！
-ヘルシンキまで電車で一番便利な乗れれます
+ヘルシンキに
 ", 
 "Tervetuloa Suomeen!")}}
 
