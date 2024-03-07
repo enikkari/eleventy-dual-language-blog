@@ -1,15 +1,14 @@
 ---
-title_jp: My first page
+title_jp: 初めてページ
 title_fi: eka sivuni 
 layout: base.njk
 templateEngineOverride: njk,md
 ---
 
+{% include "intro.njk" %}
 
-<meta http-equiv="refresh" content="0; url=/noru-matkustaminen/" />
+{% set post = collections.posts | last %}
 
-
-
-## Blog Posts
+<meta http-equiv="refresh" content="0; url={{ post.url }}" />
 
 {% include "postlist.njk" %}
