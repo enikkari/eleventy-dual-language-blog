@@ -63,3 +63,11 @@
 </center>
 
 {% endmacro %}
+
+{% macro centerImage(img_url) %}
+
+<div class="row text-center">
+    <img class="thumbnail"
+                src="{{img_url}}" max-height="10">
+    </div>
+{% endmacro %}

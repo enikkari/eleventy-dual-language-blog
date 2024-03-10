@@ -3,6 +3,7 @@ title_jp: 本をおすすめます
 title_fi: Kirjasuosittelut
 templateEngineOverride: njk,md
 layout: base.njk
+date: "2023-01-01"
 ---
 
 {% extends 'post.njk' %}

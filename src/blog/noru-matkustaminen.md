@@ -9,8 +9,6 @@ date: "2024-03-02"
 
 {% block content %}
 
-{{instagram("C3j5hfHMtrF")}}
-
 {{langBlock(
 "フィンランドにようこそ！
 ヘルシンキに
@@ -19,13 +17,17 @@ date: "2024-03-02"
 
 <h2>{{langBlock("ヘルシンキ空港から市内まで何で乗ります", "Miten matkustan Helsinki-Vantaan Lentokentältä kaupunkiin?")}}</h2>
 
+/Users/eevanikkari/Documents/nikkorifi/src/img/noru-matkustaminen/hsl_app.png
 <h3>{{langBlock("ヘルシンキに乗りたい", "Haluan Helsinkiin")}}</h2>
 {{langBlock(
 "フィンランドにようこそ！
 ヘルシンキまで電車で一番便利な乗れれます
 ", 
 "")}}
-KUVA keh'rata
+KUVA kehärata
+
+{{instagram("CtasVOWIWg7")}}
+{{instagram("CtasVOWIWg7")}}
 
 HSL ABC
 liput: lippuautomaatti, HSL appi, R-kioski
@@ -40,6 +42,12 @@ Onnibussi
 r kioski 
 
 <h2>{{langBlock("電車で", "Helsingin sisällä")}}</h5>
+
+{{centerImage("../img/noru-matkustaminen/hsl_app.png")}}
+
+https://www.hsl.fi/en/tickets-and-fares/hsl-app
+
+
 
 HSL app,
 Lippuautomaatti
