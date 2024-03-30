@@ -2,6 +2,7 @@
 ```
 npm init -y
 npm install @11ty/eleventy
+npm install @11ty/eleventy-img
 npm start # start 
 ```
 
