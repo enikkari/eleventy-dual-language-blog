@@ -1,22 +1,20 @@
+# Japanese-Finnish dual-language blog template
+
+todo write intro
+
+[nikkori.fi/](https://nikkori.fi/noru-matkustaminen/)
+
 
 ```
 npm init -y
 npm install @11ty/eleventy
-npm install @11ty/eleventy-img
 npm start # start 
 ```
 
-https://later.com/linki-in-bio
 
-Eleventy
-https://11ty.rocks/posts/create-your-first-basic-11ty-website/
-Nunjucks (split content suom-jp)
 
-Autom fill furigana:
+## Furigana
 
-> sudo npm install kuroshiro
-> npm install kuroshiro-analyzer-kuromoji
+This project was used to help genetate the ryby blocks of furigana text. Future development considerations would be to automate this process.
 
 https://github.com/mornir/get-furigana
-
-https://kuroshiro.org/
