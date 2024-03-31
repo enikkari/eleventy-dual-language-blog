@@ -1,0 +1,13 @@
+/**
+* Toggle languages
+*/
+
+body:has(input#language-fi:not(:checked)) [lang="fi"] {
+    display: none;
+   }
+   
+body:has(input#language-jp:not(:checked)) [lang="jp"] {
+    display: none;
+   }
+
+  
