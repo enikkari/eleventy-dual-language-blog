@@ -19,7 +19,8 @@ Some features of this template:
 ```
 npm init -y
 npm install @11ty/eleventy
-npm start # start 
+# start
+npm start 
 ```
 
 ## Dependencies
