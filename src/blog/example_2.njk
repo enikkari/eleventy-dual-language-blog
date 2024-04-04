@@ -1,0 +1,15 @@
+{var title_jp = "Example pasdasd"}
+{var title_fi = "Esimerkki postaus otsikko"}
+{var layout = "base.njk"}
+{var date = "2024-04-04"}
+
+{% extends 'post.njk' %}
+
+{% block content %}
+    
+{{ subTitleLangBlock(
+"Subtitle 1",
+"Alaotsikko 1"
+)}}
+
+{% endblock %}
