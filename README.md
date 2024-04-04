@@ -4,8 +4,8 @@ This project contains a template to create a dual languge 11ty static site gener
 Each chapter is divided into blocks, so that the two corresponding languages will stack together on smaller screens, and next to each other on bigger screen.
 You can also add images or social media posts in between the blocks without disturbing the order.
 
-See an example here:
-[nikkori.fi/](https://nikkori.fi/noru-matkustaminen/)
+Preview Example page here:
+https://html-preview.github.io/?url=https://github.com/enikkari/eleventy-dual-language-blog/public/example/index.html
 
 Some features of this template:
 - Two different languages in blocks that stack on smaller screens and can have images/instagram posts between blocks
