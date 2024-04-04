@@ -11,18 +11,18 @@
 </head>
 <body>
         <main>
-          <form>
-            <input type="checkbox" id="language-jp" checked>
-            <label for="language-jp">
-              🇯🇵<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>
-            </label>
-            
-            <input type="checkbox" id="language-fi" checked>
-            <label for="language-fi">
-              🇫🇮Suomi
-            </label>
-           </form>
           <div class="grid-x grid-padding-x columns">
+                    <form>
+                      <input type="checkbox" id="language-jp" checked>
+                      <label for="language-jp">
+                        🇯🇵<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>
+                      </label>
+
+                      <input type="checkbox" id="language-fi" checked>
+                      <label for="language-fi">
+                        🇫🇮Suomi
+                      </label>
+                     </form>
             {% block content %}
             {{ content | safe }}
             {% endblock %}
