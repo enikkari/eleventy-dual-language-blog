@@ -5,7 +5,7 @@ Each chapter is divided into blocks, so that the two corresponding languages wil
 You can also add images or social media posts in between the blocks without disturbing the order.
 
 Preview Example page here:
-https://html-preview.github.io/?url=https://github.com/enikkari/eleventy-dual-language-blog/public/example/index.html
+https://html-preview.github.io/?url=https://github.com/enikkari/eleventy-dual-language-blog/blob/main/public/example/index.html
 
 Some features of this template:
 - Two different languages in blocks that stack on smaller screens and can have images/instagram posts between blocks
