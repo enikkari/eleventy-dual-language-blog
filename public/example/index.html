@@ -1,12 +1,117 @@
-{% macro instagram(insta_code) %}
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ニッコリ.fi Example post title &lt;japanese title&gt; Esimerkki postaus otsikko </title>
+  <link rel="stylesheet" href="../../css/foundation.min.css">
+  <link rel="stylesheet" href="../../css/app.css">
+  <!-- You can add your own umami tracking here -->
+  <!-- <script async src="https://analytics.umami.is/script.js"
+          data-website-id="YOU-UMAMI-ID"></script> --> 
+</head>
+<body>
+        <main>
+          <div class="grid-x grid-padding-x columns">
+                    <form>
+                      <input type="checkbox" id="language-jp" checked>
+                      <label for="language-jp">
+                        🇯🇵<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>
+                      </label>
+
+                      <input type="checkbox" id="language-fi" checked>
+                      <label for="language-fi">
+                        🇫🇮Suomi
+                      </label>
+                     </form>
+            
+            <div class="row">
+    <dic class="column callout primary">
+    <div class="show-for-medium medium-4 columns">
+        <img class="thumbnail"
+        src="/img/profile_image.jpg" max-height="10">
+    </div>
+    <div class="medium-4 small-12 columns text-left" lang="jp">
+        <h5>Example intro</h5>
+        This is an example intro this block would be in japanese <BR>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p><a data-umami-event="insta" target="_blank"
+            href="https://github.com/enikkari/eleventy-dual-language-blog">
+github</a>
+</div>
+<div class="medium-4 small-12 columns text-left" lang="fi">
+<h5>Esimerkki intro</h5>
+Tämä on esimerkki into. Tämä blocki on suomeksi</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p><a data-umami-event="insta" target="_blank"
+                    href="https://github.com/enikkari/eleventy-dual-language-blog">
+github</a></p>
+</div>
+</div>
+<div class="row text-right">
+    <div style="color: #655d56">2024-04-04</div>
+    <div style="font-size: 0.8rem; color: #b8b3ae"></div>
+</div>
+<div class="row cell">
+<div class="row">
+    <div class="medium-6 small-12 columns" lang="jp">
+        <header lang="jp"><h1>Example post title &lt;japanese title&gt;</h1></header>
+    </div>
+    <div class="medium-6 small-12 columns" lang="fi">
+        <header lang="fi"><h1>Esimerkki postaus otsikko</h1></header>
+    </div>
+</div>
+<div class="row">
+    <div class="medium-6 small-12 columns text-left cell" lang="jp">
+        <p lang="jp">Welcome to the example document</p>
+    </div>
+    <div class="medium-6 small-12 columns text-left cell" lang="fi">
+        <p lang="fi">Tervetuloa esimerkkidokumenttiin</p>
+    </div>
+</div>
+<BR>
+<div class="row">
+    <div class="medium-6 small-12 columns text-left cell" lang="jp">
+        <h2 lang="jp">Subtitle 1</h2>
+    </div>
+    <div class="medium-6 small-12 columns text-left cell" lang="fi">
+        <h2 lang="fi">Alaotsikko 1</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="medium-6 small-12 columns text-left cell" lang="jp">
+        <p lang="jp">This block can contain html <a target='_blank' href='https://github.com/enikkari/eleventy-dual-language-blog'>
+https://github.com/enikkari/eleventy-dual-language-blog</a>. Just make sure the quotation marks don't clash</p>
+    </div>
+    <div class="medium-6 small-12 columns text-left cell" lang="fi">
+        <p lang="fi">Tämä blokki voi sisältää html:ää <a target='_blank' href='https://github.com/enikkari/eleventy-dual-language-blog'>
+https://github.com/enikkari/eleventy-dual-language-blog</a>. Varmista etteivät lainausmerkit vaikuta blokkiin</p>
+    </div>
+</div>
+<BR>
+<div class="row">
+    <div class="medium-6 small-12 columns text-left cell" lang="jp">
+        <h2 lang="jp">Adding instgram embeds and images</h2>
+    </div>
+    <div class="medium-6 small-12 columns text-left cell" lang="fi">
+        <h2 lang="fi">Lisää instagram postauksia ja kuvia</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="medium-6 small-12 columns text-left cell" lang="jp">
+        <p lang="jp">Add an instagram post with only the id. The post and images are centered in between the columns.</p>
+    </div>
+    <div class="medium-6 small-12 columns text-left cell" lang="fi">
+        <p lang="fi">Lisää instagram postaus pelkällä id:llä. Postaus ja kuvat ovat keskitetty columnien keskelle</p>
+    </div>
+</div>
 <div class="row text-center">
 <center>
     <blockquote class="instagram-media"
-        data-instgrm-permalink="https://www.instagram.com/p/{{insta_code}}/?utm_source=ig_embed&amp;utm_campaign=loading"
+        data-instgrm-permalink="https://www.instagram.com/p/C5TdRfEt25u/?utm_source=ig_embed&amp;utm_campaign=loading"
         data-instgrm-version="14"
         style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div
             style="padding:16px;"> <a
-                href="https://www.instagram.com/p/{{insta_code}}/?utm_source=ig_embed&amp;utm_campaign=loading"
+                href="https://www.instagram.com/p/C5TdRfEt25u/?utm_source=ig_embed&amp;utm_campaign=loading"
                 style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
                 target="_blank"> <div
                     style=" display: flex; flex-direction: row; align-items: center;">
@@ -55,19 +160,62 @@
                     <div
                         style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p
                 style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a
-                    href="https://www.instagram.com/p/{{insta_code}}/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    href="https://www.instagram.com/p/C5TdRfEt25u/?utm_source=ig_embed&amp;utm_campaign=loading"
                     style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
                     target="_blank"></a></p></div></blockquote> <script
         async src="//www.instagram.com/embed.js"></script>
 </center>
 </div>
 <br>
-{% endmacro %}
-
-{% macro centerImage(img_url) %}
-
+<div class="row">
+    <div class="medium-6 small-12 columns text-left cell" lang="jp">
+        <p lang="jp">Add an instagram post with only the id. The post and images are centered in between the columns.</p>
+    </div>
+    <div class="medium-6 small-12 columns text-left cell" lang="fi">
+        <p lang="fi">Lisää instagram postaus pelkällä id:llä. Postaus ja kuvat ovat keskitetty columnien keskelle</p>
+    </div>
+</div>
 <div class="row text-center">
     <img class="thumbnail"
-                src="{{img_url}}" max-height="10">
+                src="/img/profile_image.jpg" max-height="10">
     </div>
-{% endmacro %}
+<div class="row">
+    <div class="medium-6 small-12 columns text-left cell" lang="jp">
+        <p lang="jp">Add an instagram post with only the id. The post and images are centered in between the columns.</p>
+    </div>
+    <div class="medium-6 small-12 columns text-left cell" lang="fi">
+        <p lang="fi">Lisää instagram postaus pelkällä id:llä. Postaus ja kuvat ovat keskitetty columnien keskelle</p>
+    </div>
+</div>
+</div>
+    <!-- post list -->
+<div class="column callout">
+    <div class="show-for-medium medium-6 small-12 columns" lang="jp">
+        <ul>
+            ポスト:
+<p><li><a href="/example/">Example post title &lt;japanese title&gt;</a></li></p>
+<p><li><a href="/noru-matkustaminen/">フィンランドに何で乗られますか</a></li></p>
+<p></ul><br>
+</div>
+<div class="show-for-medium medium-6 small-12 columns" lang="fi">
+<ul>
+Postaukset:</p>
+<p><li><a href="/example/">Esimerkki postaus otsikko</a></li></p>
+<p><li><a href="/noru-matkustaminen/">Millä voi matkustaa Suomessa?</a></li></p>
+<p></ul><br>
+</div>
+<div class="hide-for-medium small-12 columns" lang="jp">
+<ul>
+ポスト / Postaukset:</p>
+<p><li><a href="/example/">Example post title &lt;japanese title&gt;</a></li>
+<li><a href="/example/">Esimerkki postaus otsikko</a></li></p>
+<p><li><a href="/noru-matkustaminen/">フィンランドに何で乗られますか</a></li>
+<li><a href="/noru-matkustaminen/">Millä voi matkustaa Suomessa?</a></li></p>
+<p></ul><br>
+</div></p>
+</div>
+            
+          </div>
+        </main>
+</body>
+</html>
