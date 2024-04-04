@@ -8,6 +8,9 @@
     <div style="color: #655d56">{{date}}</div>
     <div style="font-size: 0.8rem; color: #b8b3ae">{{edited}}</div>
 </div>
+
+<div class="row cell">
+
 <div class="row">
     <div class="medium-6 small-12 columns" lang="jp">
         <header lang="jp"><h1>{{title_jp}}</h1></header>
@@ -16,7 +19,7 @@
         <header lang="fi"><h1>{{title_fi}}</h1></header>
     </div>
 </div>
-<div class="row">
+
     {% block content %}
     {{ content }}
     {% endblock %}
