@@ -1,10 +1,22 @@
 {% macro langBlock(content1, content2) %}
 <div class="row">
-    <div class="medium-6 small-12 columns" lang="jp">
+    <div class="medium-6 small-12 columns text-left cell" lang="jp">
         <p lang="jp">{{ content1 | safe}}</p>
     </div>
-    <div class="medium-6 small-12 columns" lang="fi">
+    <div class="medium-6 small-12 columns text-left cell" lang="fi">
         <p lang="fi">{{ content2 | safe }}</p>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro subTitleLangBlock(content1, content2) %}
+<BR>
+<div class="row">
+    <div class="medium-6 small-12 columns text-left cell" lang="jp">
+        <h2 lang="jp">{{ content1 | safe}}</h2>
+    </div>
+    <div class="medium-6 small-12 columns text-left cell" lang="fi">
+        <h2 lang="fi">{{ content2 | safe }}</h2>
     </div>
 </div>
 {% endmacro %}
